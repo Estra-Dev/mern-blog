@@ -13,7 +13,7 @@ const Home = () => {
 
   const getPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/posts")
+      const response = await axios.get("https://mern-blog-app-api-kkqn.onrender.com/posts")
       setPosts(response.data)
     } catch (error) {
       console.log("could not get", error)
