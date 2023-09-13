@@ -2,6 +2,8 @@ import {useState, useEffect} from 'react'
 import axios from "axios"
 import Blog from './Blog'
 import { toast } from 'react-toastify'
+import dotenv from "dotenv"
+dotenv.config()
 
 const Home = () => {
 
@@ -13,7 +15,7 @@ const Home = () => {
 
   const getPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:3001/posts")
+      const response = await axios.get(`https://mern-blog-app-apiy.onrender.com/posts`)
       setPosts(response.data)
     } catch (error) {
       console.log("could not get", error)
