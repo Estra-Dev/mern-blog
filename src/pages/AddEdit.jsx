@@ -105,10 +105,10 @@ const AddEdit = () => {
           <label htmlFor="title">Title</label>
           <input type="text" name="title" className=" p-5 w-full rounded-md mt-2" value={title} onChange={handleChanges}/>
         </div>
-        <div>
+        {/* <div>
           <label htmlFor="image">Image</label>
-          {/* <input type="file" name="img" onChange={(ev) => setFiles(ev.target.files)} /> */}
-        </div>
+          <input type="file" name="img" onChange={(ev) => setFiles(ev.target.files)} />
+        </div> */}
         <div className=" mt-5 flex flex-col">
           <label htmlFor="content">Content</label>
           {/* <ReactQuill theme="snow" name="content" value={content} modules={modules} formats={formats} onChange={(ev) =>setContent(ev)}/> */}
